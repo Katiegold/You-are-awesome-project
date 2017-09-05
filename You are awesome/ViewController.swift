@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-      let pi = 3.1415926535897932384626
+   var index = 0
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var messageLabelOther: UILabel!
@@ -19,30 +19,53 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(pi)
-        
-   
     }
 
     @IBAction func messageButtonPressed(_ sender: UIButton) {
-    
-        let message1 = "You are FANTASTIC!"
-        let message2 = "You are great!"
-        let message3 = "You are amazing!"
-      
         
-        if messageLabel.text == message1 {
-            messageLabel.text = message2
-            print(pi)
-            
-        } else if messageLabel.text == message2{
-            messageLabel.text = message3
+        let messages = ["you are fantastic!",
+                        "you are great!",
+                        "you are sweet!",
+                        "you are amazing!",
+                        "you brighten my day!",
+                        "you are da bomb",
+                        "I can't wait to use your app"]
+        
+        var newIndex = -1
+        repeat {
+            newIndex = Int(arc4random_uniform(UInt32(messages.count)))
+        } while index == newIndex
+        
+        index = newIndex
+        messageLabel.text = messages[index]
+        
+        
+//        var randomIndex = Int(arc4random_uniform(UInt32(messages.count)))
+//        messageLabel.text = messages[randomIndex]
+        
+        
+//        messageLabel.text = messages[index]
+//        index = index + 1
+//
+//        if index == messages.count {
+//            index = 0
+//
+//        }
     
-            
-        } else {
-            messageLabel.text = message1
-        }
-    
+//        let message1 = "You are FANTASTIC!"
+//        let message2 = "You are great!"
+//        let message3 = "You are amazing!"
+//
+//
+//        if messageLabel.text == message1 {
+//            messageLabel.text = message2
+//            print(pi)
+//        } else if messageLabel.text == message2{
+//            messageLabel.text = message3
+//        } else {
+//            messageLabel.text = message1
+//        }
+//
     }
 
     
