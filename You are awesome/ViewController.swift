@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         index = newIndex
         messageLabel.text = messages[index]
         
-        
+        //test
 //        var randomIndex = Int(arc4random_uniform(UInt32(messages.count)))
 //        messageLabel.text = messages[randomIndex]
         
