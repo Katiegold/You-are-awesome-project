@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					D66BF3151F55AEEC009275CF = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9UX9VQ3FRS;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -263,7 +264,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9UX9VQ3FRS;
 				INFOPLIST_FILE = "You are awesome/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gold.You-are-awesome";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9UX9VQ3FRS;
 				INFOPLIST_FILE = "You are awesome/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gold.You-are-awesome";
 				PRODUCT_NAME = "$(TARGET_NAME)";
